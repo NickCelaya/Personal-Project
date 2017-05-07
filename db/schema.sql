@@ -1,0 +1,136 @@
+-- CREATE TABLE IF NOT EXISTS products(
+-- id SERIAL PRIMARY KEY,
+-- system VARCHAR,
+-- name  VARCHAR,
+-- description VARCHAR
+-- );
+--
+-- INSERT INTO products (system, name, description)
+-- VALUES
+-- ('X System', 'X1D-50c', 'Like the iconic V System, the X1D seamlessly combines portability with excellent optical quality for which the brand is renowned. Hasselblad has ingeniously introduced mirrorless technology to digital medium format for the first time ever, creating a precision performance camera that can sit in the palm of your hand. The 50MP CMOS sensor captures the finest details with true natural colours.'),
+--
+-- ('X System', 'X1D-50c 4116 Edition', 'The X1D-50c 4116 Edition has been created to commemorate Hasselblad’s 75 years at the pinnacle of photography. Since 1941, we have drawn on Victor Hasselblad’s philosophy of innovation and design to produce cameras that push the boundaries of excellence; that help photographers ‘create to inspire’.
+--
+-- Like the iconic V System, the X1D seamlessly combines portability with excellent optical quality for which the brand is renowned. Hasselblad has ingeniously introduced mirrorless technology to digital medium format for the first time ever, creating a precision performance camera that can sit in the palm of your hand. The 50MP CMOS sensor captures the finest details with true natural colours.' ),
+--
+-- ('H6 System', 'H6D-100c', 'For the photographer who demands nothing less than the best from their digital camera, we present the H6D-100c. Its large sensor offers an almost full field-of-view from our HC & HCD wide angle lenses and is capable of recording breathtaking detail, even in poor lighting conditions.
+--
+-- The all new H6D-100c is the latest generation of our H System camera and offers the highest quality output from any digital camera in today’s market.'),
+--
+-- ('H6 System', 'H6D-50c', 'As Hasselblad celebrates its 75th Anniversary our Swedish craftsmanship comes to the fore: driven by our passion for excellence, based on our uncompromising image quality, design and performance and drawing on our core strengths, we present a new chapter in medium format photography.
+--
+-- The all new H6D-50c is the latest generation of our integrated digital camera and has been painstakingly redesigned from the ground up to incorporate the very latest technologies.'),
+--
+-- ('H6 System', 'H6X', 'Versatility comes to the fore again from Hasselblad by offering a camera body that is fully compatible with all H System lenses, including the HCD 24mm, HCD 28mm and the HCD 35-90mm lenses. It can also use the film magazine and offers H5X functionality with 3rd party digital backs.
+--
+-- Although aimed primarily at current H1, H2, H2F, H4X and H5X users, the H6X can naturally act as a backup for H5D users too.');
+
+
+
+
+
+
+-- CREATE TABLE IF NOT EXISTS images(
+-- id SERIAL PRIMARY KEY,
+-- products_id INTEGER REFERENCES products(id),
+-- img VARCHAR,
+-- description VARCHAR
+-- );
+--
+-- INSERT INTO images (products_id, img, description)
+-- VALUES
+-- (1, 'https://s6.postimg.org/r7308m7ht/x50_Big_systems_1.jpg', 'Like the iconic V System, the X1D seamlessly combines portability with excellent optical quality for which the brand is renowned. Hasselblad has ingeniously introduced mirrorless technology to digital medium format for the first time ever, creating a precision performance camera that can sit in the palm of your hand. The 50MP CMOS sensor captures the finest details with true natural colours.'),
+--
+-- (1, 'https://s6.postimg.org/hb1x8z1pt/x50_systems_2.jpg', 'Like the iconic V System, the X1D seamlessly combines portability with excellent optical quality for which the brand is renowned. Hasselblad has ingeniously introduced mirrorless technology to digital medium format for the first time ever, creating a precision performance camera that can sit in the palm of your hand. The 50MP CMOS sensor captures the finest details with true natural colours.'),
+--
+-- (1, 'https://s6.postimg.org/7f0u9bvxt/x50_systems_3.jpg', 'Like the iconic V System, the X1D seamlessly combines portability with excellent optical quality for which the brand is renowned. Hasselblad has ingeniously introduced mirrorless technology to digital medium format for the first time ever, creating a precision performance camera that can sit in the palm of your hand. The 50MP CMOS sensor captures the finest details with true natural colours.'),
+--
+-- (1, 'https://s6.postimg.org/neo36mhdd/x50_systems_4.jpg', 'Like the iconic V System, the X1D seamlessly combines portability with excellent optical quality for which the brand is renowned. Hasselblad has ingeniously introduced mirrorless technology to digital medium format for the first time ever, creating a precision performance camera that can sit in the palm of your hand. The 50MP CMOS sensor captures the finest details with true natural colours.'),
+--
+-- (1, 'https://s6.postimg.org/5pwcf05m9/x50_systems_6.jpg', 'Like the iconic V System, the X1D seamlessly combines portability with excellent optical quality for which the brand is renowned. Hasselblad has ingeniously introduced mirrorless technology to digital medium format for the first time ever, creating a precision performance camera that can sit in the palm of your hand. The 50MP CMOS sensor captures the finest details with true natural colours.'),
+--
+-- (2, 'https://s6.postimg.org/xjmqw6zxt/x50C_Big_1.jpg', 'The X1D-50c 4116 Edition has been created to commemorate Hasselblad’s 75 years at the pinnacle of photography. Since 1941, we have drawn on Victor Hasselblad’s philosophy of innovation and design to produce cameras that push the boundaries of excellence; that help photographers ‘create to inspire’.
+--
+-- Like the iconic V System, the X1D seamlessly combines portability with excellent optical quality for which the brand is renowned. Hasselblad has ingeniously introduced mirrorless technology to digital medium format for the first time ever, creating a precision performance camera that can sit in the palm of your hand. The 50MP CMOS sensor captures the finest details with true natural colours.'),
+--
+-- (2, 'https://s6.postimg.org/63xoelppt/x50C_2.jpg', 'The X1D-50c 4116 Edition has been created to commemorate Hasselblad’s 75 years at the pinnacle of photography. Since 1941, we have drawn on Victor Hasselblad’s philosophy of innovation and design to produce cameras that push the boundaries of excellence; that help photographers ‘create to inspire’.
+--
+-- Like the iconic V System, the X1D seamlessly combines portability with excellent optical quality for which the brand is renowned. Hasselblad has ingeniously introduced mirrorless technology to digital medium format for the first time ever, creating a precision performance camera that can sit in the palm of your hand. The 50MP CMOS sensor captures the finest details with true natural colours.'),
+--
+-- (2, 'https://s6.postimg.org/fpr8uwgvl/x50C_3.jpg', 'The X1D-50c 4116 Edition has been created to commemorate Hasselblad’s 75 years at the pinnacle of photography. Since 1941, we have drawn on Victor Hasselblad’s philosophy of innovation and design to produce cameras that push the boundaries of excellence; that help photographers ‘create to inspire’.
+--
+-- Like the iconic V System, the X1D seamlessly combines portability with excellent optical quality for which the brand is renowned. Hasselblad has ingeniously introduced mirrorless technology to digital medium format for the first time ever, creating a precision performance camera that can sit in the palm of your hand. The 50MP CMOS sensor captures the finest details with true natural colours.'),
+--
+-- (2, 'https://s6.postimg.org/vcii89unl/x50C_4.jpg', 'The X1D-50c 4116 Edition has been created to commemorate Hasselblad’s 75 years at the pinnacle of photography. Since 1941, we have drawn on Victor Hasselblad’s philosophy of innovation and design to produce cameras that push the boundaries of excellence; that help photographers ‘create to inspire’.
+--
+-- Like the iconic V System, the X1D seamlessly combines portability with excellent optical quality for which the brand is renowned. Hasselblad has ingeniously introduced mirrorless technology to digital medium format for the first time ever, creating a precision performance camera that can sit in the palm of your hand. The 50MP CMOS sensor captures the finest details with true natural colours.'),
+--
+-- (2, 'https://s6.postimg.org/6kiw11dgx/x50C_5.jpg', 'The X1D-50c 4116 Edition has been created to commemorate Hasselblad’s 75 years at the pinnacle of photography. Since 1941, we have drawn on Victor Hasselblad’s philosophy of innovation and design to produce cameras that push the boundaries of excellence; that help photographers ‘create to inspire’.
+--
+-- Like the iconic V System, the X1D seamlessly combines portability with excellent optical quality for which the brand is renowned. Hasselblad has ingeniously introduced mirrorless technology to digital medium format for the first time ever, creating a precision performance camera that can sit in the palm of your hand. The 50MP CMOS sensor captures the finest details with true natural colours.'),
+--
+-- (3, 'https://s6.postimg.org/5m2iyr04x/H6D-100c.jpg', 'For the photographer who demands nothing less than the best from their digital camera, we present the H6D-100c. Its large sensor offers an almost full field-of-view from our HC & HCD wide angle lenses and is capable of recording breathtaking detail, even in poor lighting conditions.
+--
+-- The all new H6D-100c is the latest generation of our H System camera and offers the highest quality output from any digital camera in today’s market.'),
+--
+-- (4, 'https://s6.postimg.org/vgcboj04x/H6D-50c.jpg', 'As Hasselblad celebrates its 75th Anniversary our Swedish craftsmanship comes to the fore: driven by our passion for excellence, based on our uncompromising image quality, design and performance and drawing on our core strengths, we present a new chapter in medium format photography.
+--
+-- The all new H6D-50c is the latest generation of our integrated digital camera and has been painstakingly redesigned from the ground up to incorporate the very latest technologies.'),
+--
+-- (5, 'https://s6.postimg.org/jts7nectt/H6X.jpg', 'Versatility comes to the fore again from Hasselblad by offering a camera body that is fully compatible with all H System lenses, including the HCD 24mm, HCD 28mm and the HCD 35-90mm lenses. It can also use the film magazine and offers H5X functionality with 3rd party digital backs.
+--
+-- Although aimed primarily at current H1, H2, H2F, H4X and H5X users, the H6X can naturally act as a backup for H5D users too.');
+--
+
+
+--
+-- CREATE TABLE IF NOT EXISTS products_info(
+-- id SERIAL PRIMARY KEY,
+-- products_id INTEGER REFERENCES products(id),
+-- header VARCHAR,
+-- description VARCHAR
+--
+-- );
+--
+--
+-- INSERT INTO products_info(products_id, header, description)
+-- VALUES
+-- (1, 'Compact Design', 'By opting for a mirrorless design, we were able to take our 50MP CMOS sensor and pack it into a footprint smaller than most full frame 35mm cameras. For the very first time, photographers have a camera that is no larger than a small format rangefinder, but offers the quality that only Hasselblad medium format can give. The deep and comfortable handgrip beautifully complements the slender body, creating a camera like no other.'),
+--
+-- (1, 'Interface', 'The X1D’s high-resolution rear LCD offers touch control for all aspects of the camera’s features. The elegant icon-based user interface speeds access to customisation options along with intuitive playback functions such as swipe and pinch to zoom. The camera also boasts an XGA electronic viewfinder for bright, crisp viewing even under difficult lighting conditions.'),
+--
+-- (1, 'GPS Module', 'Supplied as standard with the X1D, the unit integrates seamlessly with the camera via the hot shoe connection. The module uses dual satellite systems (GPS & GLONASS) for higher positional accuracy, and an improved CNR. Being hot shoe based the unit can be removed when not required, thus saving battery power. Additionally, being removable the unit can be upgraded very easily when newer modules become available.'),
+--
+-- (1, 'New Lens Range', 'To enhance the entirely new camera design we have produced a new range of autofocus lenses specifically engineered to match the high resolution capability of the X1D. The superb new XCD lenses deliver edge-to-edge sharpness in a compact form to elegantly match the slim build of the body. Existing H System users also have the flexibility to use their lenses with the X1D by means of an optional adapter.'),
+--
+-- (2, 'Compact Design', 'By opting for a mirrorless design, we were able to take our 50MP CMOS sensor and pack it into a footprint smaller than most full frame 35mm cameras. For the very first time, photographers have a camera that is no larger than a small format rangefinder, but offers the quality that only Hasselblad medium format can give. The deep and comfortable handgrip beautifully complements the slender body, creating a camera like no other.'),
+--
+-- (2, 'Interface', 'The X1D’s high-resolution rear LCD offers touch control for all aspects of the camera’s features. The elegant icon-based user interface speeds access to customisation options along with intuitive playback functions such as swipe and pinch to zoom. The camera also boasts an XGA electronic viewfinder for bright, crisp viewing even under difficult lighting conditions.'),
+--
+-- (2, 'GNSS Receiver External Module', 'Supplied as standard with the X1D, the unit integrates seamlessly with the camera via the hot shoe connection. The module uses dual satellite systems (GPS & GLONASS) for higher positional accuracy, and an improved CNR. Being hot shoe based the unit can be removed when not required, thus saving battery power. Additionally, being removable the unit can be upgraded very easily when newer modules become available.'),
+--
+-- (2, 'New Lens Range', 'To enhance the entirely new camera design we have produced a new range of autofocus lenses specifically engineered to match the high resolution capability of the X1D. The superb new XCD lenses deliver edge-to-edge sharpness in a compact form to elegantly match the slim build of the body. Existing H System users also have the flexibility to use their lenses with the X1D by means of an optional adapter.'),
+--
+-- (3, '100MP CMOS Sensor', 'Continuing the success story of the 50MP CMOS sensor we have added a 100MP option to the range, delivering unmatchable image quality and the ability to resolve the finest detail with our HC & HCD lenses, whose pedigree has long been proven through use with our 200MP Multi-shot systems. The 100MP sensor boasts an incredible 15 stops of dynamic range, allowing for maximum detail to be captured in both highlight and shadow areas. The sheer breadth of tonality that can be captured with the H6D-100c has to be seen to be believed.'),
+--
+-- (3, 'New Electronic Platform', 'The already compelling case for medium format capture has just become substantially more attractive. The entire electronic platform of the H6D has been redesigned with a fast, new generation processor to handle the advanced features of the camera. This improved speed allows a faster shooting rate of up to 1.5 frames per second that can be sustained for longer, thanks to an increased buffer.'),
+--
+-- (3, 'Touchscreen', 'The new 3” high definition rear display boasts touch capability with user customisation options including assigning favourite functions to touch buttons. We’ve increased the resolution to 920K dots and the image display performance delivers clear, colour accurate image reviews and a pin sharp Liveview experience.'),
+--
+-- (3, 'UHD & HD Video', 'Thanks to the redesign of the electronic platform, the H6D-100c is capable of capturing UHD (4K) video in Hasselblad’s proprietary RAW format which can be converted to Cinema DNG in Phocus. HD footage can also be captured in H.264 format which is compatible with all popular editing packages. Coupled with the HDMI and audio facilities, the capture of high quality video output is simplicity itself.'),
+--
+-- (3, 'Phocus 3.0', 'To complement the release of the H6D camera system, our image processing software has been enhanced with additional tools to allow more precise application of corrections.'),
+--
+-- (4, '50MP CMOS Sensor', 'When you have a reputation for manufacturing the world’s most advanced medium format camera systems there is constant expectation of more to come. The tried and tested 50MP sensor has been further developed with an increased ISO range and performance in data throughput. With close to 14 stops of dynamic range, subtle details are rendered beautifully in crisp, breathtaking detail.'),
+--
+-- (4, 'New Electronic Platform', 'The already compelling case for medium format capture has just become substantially more attractive. The entire electronic platform of the H6D has been redesigned with a fast, new generation processor to handle the advanced features of the camera. This improved speed allows a faster shooting rate of up to 2.5 frames per second that can be sustained for longer, thanks to an increased buffer.'),
+--
+-- (4, 'Touchscreen', 'The new 3” high definition rear display boasts touch capability with user customisation options including assigning favourite functions to touch buttons. We’ve increased the resolution to 920K dots and the image display performance delivers clear, colour accurate image reviews and a pin sharp Liveview experience.'),
+--
+-- (4, 'HD Video', 'Thanks to the redesign of the electronic platform, the H6D-50c is capable of capturing HD (2K) video in both H.264 & Hasselblad’s proprietary RAW format which can be converted to Apple ProRes format via Phocus 3.0. Coupled with the HDMI and audio facilities, the capture of high quality video output is simplicity itself.'),
+--
+-- (4, 'Phocus 3.0', 'To complement the release of the H6D camera system, our image processing software has been enhanced with additional tools to allow more precise application of corrections.'),
+--
+-- (5, 'Wide range of high performance lenses', 'The H6X lens program is designed and engineered by Hasselblad to meet the highest optical performance specifications. The HC and HCD lenses cover a wide spectrum of focal lengths and feature the fastest and most precise auto-focus system there is today. The unique HCD 24mm wide-angle lens, the HCD 28mm and the HCD 35-90 zoom lens have been tailored for digital use with a 37 × 49mm sensor, but can of course also be used with larger sensors with a minimal drop in performance in the extreme corners. The integral lens shutters allow for flash sync up to 1/800 second. The lens shutter also provides silent and vibration-free operation.'),
+--
+-- (5, 'Superior viewfinder program', 'The viewfinder is the most important interface between the photographer and the subject. The large and bright viewfinder of the H6X camera shows the image crisp and clear, letting you work even in dim lighting with perfect results. The HV 90X-II viewfinder covers the full area of the HC lens line and offers near 100% image view and eyesight dioptre correction. The large eyepiece also allows full image view even when wearing glasses. The HVD 90X has been optimised for digital work with the digital sensor size of 37 × 49mm. The HVM, a waist-level viewfinder, is available as an accessory.');

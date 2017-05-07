@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:100');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+//home page styles
+
+//body
+.background{
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+//body
+
+
+
+//Start of header
+.container{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 223px;
+  width: 100vw;
+}
+
+
+.mainContainer{
+  background-color: black;
+  height: 223px;
+  width: 50vw;
+  margin-right: 84px;
+  margin-left: 236px;
+}
+
+.logoContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  height: 148.5px;
+  width: 50vw;
+  margin-top: 25px;
+}
+
+.menuContainer{
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 31px;
+    width: 50vw;
+
+}
+
+.hasselblad{
+  height: 31.9px;
+  width: 278px
+}
+
+.inspire{
+  height: 25.73px;
+  width: 278px;
+}
+
+.navContainer{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 31px;
+  width: 140.7px;
+}
+
+.navButton{
+  background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 19px;
+    width: 137.69px;
+    font-size: 16px;
+    line-height: 23px;
+    font-family: 'Libre Franklin', sans-serif;
+    cursor: pointer;
+    letter-spacing: 4px;
+    color: #d9d9d9;
+
+}
+// end of header/nav
+
+// login
+.loginDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  margin-top: 55.75px;
+  height: 111.5px;
+  width: 10vw;
+  color: white;
+}
+// login
+
+//Dropdown menu
+.dropDownMenu{
+background-color: limegreen;
+height: 300px;
+width: 100vw;
+}
+//DropDown menu
+
+
+
+// start of imageContainer
+.imageContainer{
+  background-color: black;
+  height: 744.05px;
+  width: 100vw;
+}
+
+.mainImages{
+  height: 744.05px;
+  width: 100vw;
+  object-fit: cover;
+  z-index: 1;
+
+}
+//end of imageContainer
+
+
+
+
+//Start lower image div
+.lowImageContainer{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 173.33px;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.lowImagegDiv{
+  background-color: limegreen;
+  height: 173.33px;
+  // width: 213.33px;
+  width: 100vw;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.lowerImages{
+  // height: 173.33px;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+//End lower image div
+
+
+//Footer container
+.footerContainer{
+  background-color: orange;
+  height: 622px;
+  width: 100vw;
+
+}
