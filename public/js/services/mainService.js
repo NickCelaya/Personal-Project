@@ -10,7 +10,7 @@ var endPoint3 = "/productsInfo"
 this.getData = function(){
   var promise = $http({
     method: "GET",
-    // url: endPoint1  enable to test data again 
+    // url: endPoint1  //enable to test data again
   })
   return promise.then(function(response){
     console.log(response.data);

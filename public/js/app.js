@@ -5,7 +5,7 @@ $stateProvider
 .state("home", {
   url: "/",
   templateUrl: "./views/homeTmpl.html",
-  controller: "homeCtrl"
+  controller: "homeCtrl" //change to mainCtrl to see data
 })
 
 .state("about",{
