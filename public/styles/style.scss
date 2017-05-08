@@ -148,7 +148,7 @@ width: 100vw;
 }
 
 .lowImagegDiv{
-  background-color: limegreen;
+  background-color: black;
   height: 173.33px;
   // width: 213.33px;
   width: 100vw;
@@ -157,7 +157,7 @@ width: 100vw;
 }
 
 .lowerImages{
-  // height: 173.33px;
+  height: inherit;
   width: 100%;
   object-fit: cover;
   z-index: 1;
@@ -165,10 +165,141 @@ width: 100vw;
 //End lower image div
 
 
+
+
 //Footer container
+
+//Start Upper Footer
 .footerContainer{
   background-color: orange;
   height: 622px;
   width: 100vw;
 
+}
+
+.innerFooterContainer{
+  background-color: red;
+  // height: 622px;
+  height: inherit;
+  margin-left: 65px;
+  margin-right: 65px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.upperFooter{
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 291.5px;
+width: inherit;
+}
+
+.hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.footerUpperLeftDiv{
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  height: 291.5px;
+  width: 590px;
+}
+
+.footerUpperRightDiv{
+  display: flex;
+    flex-direction: column;
+    background-color: green;
+    height: 291.5px;
+    width: 590px;
+}
+
+.upperRightInfo{
+  background-color: lightblue;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  height: 16px;
+  width: 550px;
+  font-family: 'Libre Franklin', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.upperRightIcons{
+  background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    padding-left: 15px;
+    height: 75px;
+    width: 300px;
+}
+
+.upperLeftInfo{
+  background-color: lightblue;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  // padding-left: 15px;
+  height: 16px;
+  width: 550px;
+  font-family: 'Libre Franklin', sans-serif;
+  color: white;
+}
+
+.paragraphOne{
+  background-color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  // height: 66px;
+  // width: 550px;
+  width: inherit;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.paragraphTwo{
+  background-color: red;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  // height: 66px;
+  // width: 550px;
+  width: inherit;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.copywrite{
+  background-color: red;
+  height: 44px;
+  width: 550px;
+  margin-bottom: 10px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  color: white;
+}
+
+//End Upper Footer
+
+
+
+//Start Lower footer
+.lowerFooter{
+  background-color: limegreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border-top: #5B5B5B;
+  // border-top-style: solid;
+  // border-top-width: thin;
+  height: 149px;
+  width: inherit;
 }
