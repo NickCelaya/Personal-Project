@@ -1,0 +1,57 @@
+<div class="container">
+
+  <div class="mainContainer">
+    <div class="logoContainer">
+      <img ui-sref="home" class="hasselblad" src="https://s6.postimg.org/6ddmnhw1d/logo.png">
+      <img class="inspire" src="https://s6.postimg.org/cd1dr5gtt/Inspire_logo.png" alt="">
+    </div>
+
+    <div class="menuContainer">
+      <div class="navContainer">
+        <div class="navButton" ng-click="showProducts = !showProducts">
+          PRODUCTS
+        </div>
+      </div>
+      <div class="navContainer">
+        <div class="navButton" ng-click="showInspiration = !showInspiration">
+          INSPIRATION
+        </div>
+      </div>
+      <div class="navContainer">
+        <div class="navButton">
+        ABOUT
+      </div></div>
+      <div class="navContainer">
+        <div class="navButton">
+        OUR WORLD
+      </div>
+     </div>
+    </div>
+  </div>
+
+<!-- login -->
+<div class="loginDiv">Login goes here</div>
+<!-- login -->
+
+</div>
+<!-- end of header -->
+
+
+<!--drop down menu  -->
+
+<div ng-show="showProducts" class="dropDownMenu">
+ <div class="dropDownMenuOne">
+   <div class="dropDownMenuOneImage">
+     <img ui-sref="about"class="dropDownImage" src="https://s6.postimg.org/cxl07kzg1/x_systems_nav_5.jpg">
+   </div>
+ </div>
+ <div class="dropDownMenuTwo">
+   <div class="dropDownMenuTwoImage">
+     <img src="https://s6.postimg.org/filzhczg1/H6_system_nav.jpg">
+   </div>
+ </div>
+</div>
+<div ng-show="showInspiration" class="dropDownMenu">
+INSPIRATION HERE
+</div>
+<!--drop down menu  -->

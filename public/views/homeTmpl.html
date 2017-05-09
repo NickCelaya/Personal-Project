@@ -4,18 +4,18 @@
 
     <div class="mainContainer">
       <div class="logoContainer">
-        <img class="hasselblad" src="https://s6.postimg.org/6ddmnhw1d/logo.png">
+        <img ui-sref="home" class="hasselblad" src="https://s6.postimg.org/6ddmnhw1d/logo.png">
         <img class="inspire" src="https://s6.postimg.org/cd1dr5gtt/Inspire_logo.png" alt="">
       </div>
 
       <div class="menuContainer">
         <div class="navContainer">
-          <div class="navButton" ng-click="showDiv = !showDiv">
+          <div class="navButton" ng-click="showProducts = !showProducts">
             PRODUCTS
           </div>
         </div>
         <div class="navContainer">
-          <div class="navButton" ng-click="inspiration = !inspiration">
+          <div class="navButton" ng-click="showInspiration = !showInspiration">
             INSPIRATION
           </div>
         </div>
@@ -40,12 +40,20 @@
 
 
   <!--drop down menu  -->
-<div ng-show="showDiv" class="dropDownMenu">
- <hr>
- HELLO NICK
+
+<div ng-show="showProducts" class="dropDownMenu">
+   <div class="dropDownMenuOne">
+     <div class="dropDownMenuOneImage">
+       <img ui-sref="about"class="dropDownImage" src="https://s6.postimg.org/cxl07kzg1/x_systems_nav_5.jpg">
+     </div>
+   </div>
+   <div class="dropDownMenuTwo">
+     <div class="dropDownMenuTwoImage">
+       <img src="https://s6.postimg.org/filzhczg1/H6_system_nav.jpg">
+     </div>
+   </div>
 </div>
-<div ng-show="inspiration" class="dropDownMenu">
- <hr>
+<div ng-show="showInspiration" class="dropDownMenu">
  INSPIRATION HERE
 </div>
 <!--drop down menu  -->
@@ -108,14 +116,33 @@
           <h4>CONNECT WITH US</h4>
         </div>
         <div class="upperRightIcons">
-          CREATE SOCIAL ICONS
+          <div class="socialMediaIcons iconBorder">
+              <!--facebook-->
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+
+          </div>
+          <div class="socialMediaIcons iconBorder">
+              <!--instagram-->
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+
+          </div>
+          <div class="socialMediaIcons iconBorder">
+             <!--twitter-->
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+
+          </div>
+          <div class="socialMediaIcons iconBorder">
+            <!--youtube-->
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+
+          </div>
         </div>
       </div>
 
     </div>
     <hr class="hr">
     <div class="lowerFooter">
-      TEST 2
+      FINISH THE SECTION LATER
     </div>
     <hr class="hr">
   </div>
