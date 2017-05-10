@@ -19,20 +19,24 @@
 
     </div>
     <div class="productsLowImageRow" ng-repeat="image in images">
-      <img ng-src="{{image.img}}" alt="">
+
+      <img ng-src="{{image.img}}">
+
     </div>
   </div>
   <div class="systemInfoContainer">
     <div class="systemInfo">
-      {{product.description}}
+
+      <p>{{product.description}}</p>
+
     </div>
   </div>
 </div>
 
 <div class="productDescriptionContainer" >
-<div class=""ng-repeat= "i in info">
-  <h1>{{i.header}}</h1>
-  <p>{{i.description}}</p>
+<div class="">
+  <h1>{{info[0].header}}</h1>
+  <p>{{info[0].description}}</p>
 
 </div>
 

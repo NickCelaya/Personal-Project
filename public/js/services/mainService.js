@@ -20,6 +20,15 @@ this.getData = function(){
 
 
 
+this.createUser = function(){
+  return $http({
+    method: "POST",
+    url: "someUrl",
+    data: {
+      
+    }
+  })
+}
 
 
 
