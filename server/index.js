@@ -43,7 +43,7 @@ const mainCtrl = require("./mainController")
 
 
 // end points go here.
-app.get("/Products/:id", mainCtrl.Cameras); //end point example
+app.get("/products/:id", mainCtrl.Cameras); //end point example
 app.get("/products", mainCtrl.Products);
 app.get("/productsInfo", mainCtrl.productsInfo);
 app.get("/imagesUrl", mainCtrl.images);

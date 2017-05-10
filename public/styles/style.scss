@@ -13,7 +13,7 @@
 //body
 .background{
   background-color: black;
-  height: 100vh;
+  // height: 100vh;
   width: 100vw;
 }
 //body
@@ -378,13 +378,87 @@ overflow: hidden;
 }
 
 
+//End Lower Footer
 
 
-@media screen and (max-width: 800px) {
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+
+
+
+
+
+//Start About Page/////////////////////////////////
+
+.systemsContainer{
+  background-color: aqua;
+  height: 66.5px;
+  // width: 100vw
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+.productSystem{
+  background-color: yellow;
+  height: 16px;
+  font-size: 15px;
+}
+
+.productName{
+  background-color: purple;
+  height: inherit;
+  font-size: 36px;
+}
+
+.pictureInfoContainer{
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  height: 499.20px;
+  margin-left: 65px;
+  margin-right: 65px
+}
+
+.productImageContainer{
+  background-color: teal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: inherit;
+    width: 50%;
+}
+
+.productImage{
+  background-color: red;
+  height: 385px;
+  width: 88%;
+}
+
+.productsLowImageRow{
+  background-color: yellow;
+    height: 65px;
+    width: 59%;
+    margin-right: 29%;
+}
+
+
+.systemInfoContainer{
+  background-color: lime;
+  height: inherit;
+  width: 50%
+}
+
+.systemInfo{
+  background-color: aqua;
+  height: 167px;
+  width: 92%;
+}
+
+/// lower product info table
+
+.productDescriptionContainer{
+  background-color: hotpink;
+  height: 947px;
+  width: 100vw;
 }

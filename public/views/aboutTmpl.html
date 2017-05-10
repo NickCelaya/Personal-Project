@@ -2,22 +2,43 @@
 
 <header-directive></header-directive>
 
-<div class="dropDownMenuOneImage">
+<div class="systemsContainer">
+  <div class="productSystem">
+    {{product.system}}
+  </div>
+  <div class="productName">
+ {{product.name}}
+  </div>
+</div>
 
-<!--About Page  -->
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+<div class="pictureInfoContainer">
+  <div class="productImageContainer">
+    <div  class="productImage">
+
+      <img ng-src="{{images[0].img}}" alt="">
+
+    </div>
+    <div class="productsLowImageRow" ng-repeat="image in images">
+      <img ng-src="{{image.img}}" alt="">
+    </div>
+  </div>
+  <div class="systemInfoContainer">
+    <div class="systemInfo">
+      {{product.description}}
+    </div>
+  </div>
+</div>
+
+<div class="productDescriptionContainer" >
+<div class=""ng-repeat= "i in info">
+  <h1>{{i.header}}</h1>
+  <p>{{i.description}}</p>
 
 </div>
 
-<footer-directive></footer-directive>
+</div>
 
+
+<footer-directive></footer-directive>
 
 </section>
