@@ -2,7 +2,7 @@ angular.module("firstApp").service("mainService", function($http, $stateParams){
 
 // var baseUrl = "http://swapi.co/api/people/"
 var endPoint1 = "/imagesUrl"
-var endPoint2 = "/products"
+var endPoint2 = "/products/"
 var endPoint3 = "/productsInfo"
 
 
@@ -10,7 +10,7 @@ var endPoint3 = "/productsInfo"
 this.getData = function(){
   var promise = $http({
     method: "GET",
-    url: '/products/'+ $stateParams.id  //enable to test data again
+    url: endPoint2 + $stateParams.id  //enable to test data again
   })
   return promise.then(function(response){
     console.log(response.data);
@@ -20,15 +20,17 @@ this.getData = function(){
 
 
 
-this.createUser = function(){
-  return $http({
-    method: "POST",
-    url: "someUrl",
-    data: {
-      
-    }
-  })
-}
+
+// //example of a post request
+// this.createUser = function(objectFromController){
+//   return $http({
+//     method: "POST",
+//     url: "someUrl",
+//     data: {
+//       objectFromController
+//     }
+//   })
+// }
 
 
 

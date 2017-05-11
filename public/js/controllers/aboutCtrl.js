@@ -16,14 +16,7 @@ angular.module("firstApp").controller("aboutCtrl", function($scope, mainService)
 
 
 
-// $scope.getImages = function(){
-//   let promise = mainService.getImages()
-//   promise.then(function(response){
-//     $scope.images = response
-//   })
-// }
 
-// $scope.getImages();
 
 // end of controller
 });

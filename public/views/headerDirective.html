@@ -1,61 +1,103 @@
-<div class="container">
+<section class="background">
 
-  <div class="mainContainer">
-    <div class="logoContainer">
-      <img ui-sref="home" class="hasselblad" src="https://s6.postimg.org/6ddmnhw1d/logo.png">
-      <img class="inspire" src="https://s6.postimg.org/cd1dr5gtt/Inspire_logo.png" alt="">
-    </div>
 
-    <div class="menuContainer">
-      <div class="navContainer">
-        <div class="navButton" ng-click="showProducts = !showProducts">
-          PRODUCTS
+   <!-- Start of header -->
+
+    <div class="container">
+
+      <div class="mainContainer">
+        <div class="logoContainer">
+          <img ui-sref="home" class="hasselblad" src="https://s6.postimg.org/6ddmnhw1d/logo.png">
+          <img class="inspire" src="https://s6.postimg.org/cd1dr5gtt/Inspire_logo.png" alt="">
+        </div>
+
+        <div class="menuContainer">
+          <div class="navContainer">
+            <div class="navButton" ng-click="showProducts = !showProducts">
+              PRODUCTS
+            </div>
+          </div>
+          <div class="navContainer">
+            <div class="navButton" ng-click="showInspiration = !showInspiration">
+              INSPIRATION
+            </div>
+          </div>
+          <div class="navContainer">
+            <div class="navButton">
+            ABOUT
+          </div></div>
+          <div class="navContainer">
+            <div class="navButton">
+            OUR WORLD
+          </div>
+         </div>
         </div>
       </div>
-      <div class="navContainer">
-        <div class="navButton" ng-click="showInspiration = !showInspiration">
-          INSPIRATION
-        </div>
-      </div>
-      <div class="navContainer">
-        <div class="navButton">
-        ABOUT
-      </div></div>
-      <div class="navContainer">
-        <div class="navButton">
-        OUR WORLD
-      </div>
-     </div>
-    </div>
+
+  <!-- login -->
+  <div class="loginDiv">Login goes here</div>
+  <!-- login -->
+
   </div>
-
-<!-- login -->
-<div class="loginDiv">Login goes here</div>
-<!-- login -->
-
-</div>
-<!-- end of header -->
+  <!-- End of header -->
 
 
-<!--drop down menu  -->
+    <!-- Start drop down menu  -->
 
-<div ng-show="showProducts" class="dropDownMenu">
- <div class="dropDownMenuOne">
-   <div class="dropDownMenuOneImage">
-     <img ui-sref="about"class="dropDownImage" src="https://s6.postimg.org/cxl07kzg1/x_systems_nav_5.jpg">
+  <div ng-show="showProducts" class="dropDownMenuContainer">
+     <div class="dropDownMenu">
+       <div class="dropDownMenuDiv">
+         <img class="dropDownImage" src="https://s6.postimg.org/cxl07kzg1/x_systems_nav_5.jpg">
+         <img class="dropDownImage" src="https://s6.postimg.org/filzhczg1/H6_system_nav.jpg">
+       </div>
 
-     <!--ui-srefs-->
-     <p ui-sref="about({id:1})">camera 1</p> 
+       <!-- Starts ui srefs -->
+       <div class="menuSrefDiv">
+         <div class="xSystemsContainer">
+           <div class="xSystems">
+             <p>X SYSTEM</p>
+           </div>
 
-   </div>
- </div>
- <div class="dropDownMenuTwo">
-   <div class="dropDownMenuTwoImage">
-     <img src="https://s6.postimg.org/filzhczg1/H6_system_nav.jpg">
-   </div>
- </div>
-</div>
-<div ng-show="showInspiration" class="dropDownMenu">
-INSPIRATION HERE
-</div>
-<!--drop down menu  -->
+           <div ui-sref="about({id:1})" class="xCameraOne">
+             <p>X1D-50C add ui sref</p>
+           </div>
+           <div ui-sref="about({id:2})" class="xCameraTwo">
+             <p>X1D-50C4116 EDITION add ui sref</p>
+           </div>
+         </div>
+
+         <div class="hSystemsContainer">
+
+           <div class="hSystems">
+             <p>H6 SYSTEM</p>
+           </div>
+           <div ui-sref="about({id:3})" class="hCameraOne">
+             <p>H6D-100C add ui sref</p>
+           </div>
+           <div ui-sref="about({id:4})" class="hCameraTwo">
+             <p>H6D-50C add ui sref</p>
+           </div>
+           <div ui-sref="about({id:5})" class="hCameraThree">
+             H6X add ui sref
+           </div>
+          </div>
+
+          <!-- End ui srefs -->
+
+       </div>
+
+
+     </div>
+     </div>
+  </div>
+  <div ng-show="showInspiration" class="dropDownMenu">
+   INSPIRATION HERE
+  </div>
+  <!-- End drop down menu  -->
+
+
+
+
+
+
+</section>

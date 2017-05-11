@@ -21,19 +21,20 @@ module.exports = {
             } else{
               res.status(500).send(err3)
             }
-              //[0]index zero returns AI 6.5 creedmoor
+
            })
         } else{
           res.status(500).send(err2)
         }
-          //[0]index zero returns AI 6.5 creedmoor
+
        })
     } else{
       res.status(500).send(err)
     }
-      //[0]index zero returns AI 6.5 creedmoor
+
    })
  },
+
 
   Products: function(req, res){
     db.products(function(err,products){
@@ -41,11 +42,13 @@ module.exports = {
     })
   },
 
+
   productsInfo: function(req, res){
     db.productsInfo(function(err, productsInfo){
       res.status(200).send(productsInfo)
     })
   },
+
 
   images: function(req, res){
 

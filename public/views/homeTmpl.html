@@ -1,5 +1,7 @@
 <section class="background">
 
+ <!-- Start of header -->
+
   <div class="container">
 
     <div class="mainContainer">
@@ -36,28 +38,61 @@
 <!-- login -->
 
 </div>
-<!-- end of header -->
+<!-- End of header -->
 
 
-  <!--drop down menu  -->
+  <!-- Start drop down menu  -->
 
-<div ng-show="showProducts" class="dropDownMenu">
-   <div class="dropDownMenuOne">
-     <div class="dropDownMenuOneImage">
+<div ng-show="showProducts" class="dropDownMenuContainer">
+   <div class="dropDownMenu">
+     <div class="dropDownMenuDiv">
        <img class="dropDownImage" src="https://s6.postimg.org/cxl07kzg1/x_systems_nav_5.jpg">
-       <p ui-sref="about({id: 1})"> camera 1</p>
+       <img class="dropDownImage" src="https://s6.postimg.org/filzhczg1/H6_system_nav.jpg">
      </div>
+
+     <!-- Starts ui srefs -->
+     <div class="menuSrefDiv">
+       <div class="xSystemsContainer">
+         <div class="xSystems">
+           <p>X SYSTEM</p>
+         </div>
+
+         <div ui-sref="about({id:1})" class="xCameraOne">
+           <p>X1D-50C add ui sref</p>
+         </div>
+         <div ui-sref="about({id:2})" class="xCameraTwo">
+           <p>X1D-50C4116 EDITION add ui sref</p>
+         </div>
+       </div>
+
+       <div class="hSystemsContainer">
+
+         <div class="hSystems">
+           <p>H6 SYSTEM</p>
+         </div>
+         <div ui-sref="about({id:3})" class="hCameraOne">
+           <p>H6D-100C add ui sref</p>
+         </div>
+         <div ui-sref="about({id:4})" class="hCameraTwo">
+           <p>H6D-50C add ui sref</p>
+         </div>
+         <div ui-sref="about({id:5})" class="hCameraThree">
+           H6X add ui sref
+         </div>
+        </div>
+
+        <!-- End ui srefs -->
+
+     </div>
+
+
    </div>
-   <div class="dropDownMenuTwo">
-     <div class="dropDownMenuTwoImage">
-       <img src="https://s6.postimg.org/filzhczg1/H6_system_nav.jpg">
-     </div>
    </div>
 </div>
 <div ng-show="showInspiration" class="dropDownMenu">
  INSPIRATION HERE
 </div>
-<!--drop down menu  -->
+<!-- End drop down menu  -->
 
 
 
