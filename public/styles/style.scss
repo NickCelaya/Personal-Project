@@ -199,6 +199,7 @@
     color: white;
 }
 
+
 // .dropDownMenuTwo{
 //   background-color: red;
 //     display: flex;
@@ -302,14 +303,14 @@
   background-color: black;
   display: flex;
   justify-content: space-between;
-  height: 173.33px;
+  // height: 173.33px;
   width: 100vw;
   overflow: hidden;
 }
 
 .lowImagegDiv{
   background-color: black;
-  height: 173.33px;
+  // height: 173.33px;
   // width: 213.33px;
   width: 100vw;
   object-fit: cover;
@@ -317,7 +318,7 @@
 }
 
 .lowerImages{
-  height: inherit;
+  height: auto;
   width: 100%;
   object-fit: cover;
   z-index: 1;
@@ -505,8 +506,8 @@ overflow: hidden;
   background-color: aqua;
   height: 66.5px;
   // width: 100vw
-  margin-left: 65px;
-  margin-right: 65px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .productSystem{
@@ -525,33 +526,47 @@ overflow: hidden;
   background-color: salmon;
   display: flex;
   justify-content: center;
-  height: 499.20px;
-  margin-left: 65px;
-  margin-right: 65px
+  height: auto;
+  // height: 499.20px;
+  margin-left: 15%;
+  margin-right: 15%
 }
 
 .productImageContainer{
   background-color: teal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     height: inherit;
     width: 50%;
 }
 
-.productImage{
+.productImageDiv{
   background-color: red;
   height: 385px;
   width: 88%;
 }
 
-.productsLowImageRow{
-  background-color: yellow;
-    height: 65px;
-    width: 59%;
-    margin-right: 29%;
+.bigImage{
+  background-color: red;
+    height: auto;
+    width: 95%;
+    object-fit: cover;
 }
 
+.productsLowImageRow{
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+    height: 65px;
+    width: 59%;
+}
+
+.rowOfImages{
+  height: 65px;
+  width: auto;
+  object-fit: cover;
+}
 
 .systemInfoContainer{
   background-color: lime;
@@ -571,4 +586,12 @@ overflow: hidden;
   background-color: hotpink;
   height: 947px;
   width: 100vw;
+}
+
+.details{
+  background-color: aqua;
+  height: 947px;
+  width: auto;
+  margin-left: 15%;
+  margin-right: 15%;
 }

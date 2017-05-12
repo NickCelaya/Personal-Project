@@ -1,46 +1,61 @@
 <section class="background">
 
-<header-directive></header-directive>
 
+<!-- Header Directive -->
+<header-directive></header-directive>
+<!-- Header Directive -->
+
+
+<!--Start of system name and products section-->
 <div class="systemsContainer">
   <div class="productSystem">
-    {{product.system}}
+    <!-- {{product.system}} -->
   </div>
   <div class="productName">
- {{product.name}}
+ <!-- {{product.name}} -->
   </div>
 </div>
+<!--End of system name and products section-->
+
 
 <div class="pictureInfoContainer">
   <div class="productImageContainer">
-    <div  class="productImage">
+    <div class="productImage">
 
-      <img ng-src="{{images[0].img}}" alt="">
-
-    </div>
-    <div class="productsLowImageRow" ng-repeat="photo in images">
-
-      <img ng-src="{{photo.img}}">
+    <img ng-src="{{images[0].img}}" class="bigImage">
 
     </div>
+
+    <!-- repeated row images -->
+    <div class="productsLowImageRow">
+     <div ng-repeat="item in images">
+       <div>
+         <img class="rowOfImages" ng-src="{{item.img}}">
+       </div>
+     </div>
+   </div>
+
   </div>
   <div class="systemInfoContainer">
     <div class="systemInfo">
 
-      <p>{{product.description}}</p>
+<!-- finished the div above... start here friday morning and keep styling divs and data -->
+
+      <!-- <p>{{product.description}}</p> -->
 
     </div>
   </div>
 </div>
 
 <div class="productDescriptionContainer" >
-<div class="">
-  <h1>{{info[0].header}}</h1>
-  <p>{{info[0].description}}</p>
+<div class="details">
+  stuff here
+<!-- <p>{{info[0].description}}</p> -->
 
 </div>
 
 </div>
+
 
 
 <footer-directive></footer-directive>

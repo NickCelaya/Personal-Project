@@ -1,6 +1,7 @@
 <section class="background">
 
 
+
    <!-- Start of header -->
 
     <div class="container">
@@ -10,15 +11,14 @@
           <img ui-sref="home" class="hasselblad" src="https://s6.postimg.org/6ddmnhw1d/logo.png">
           <img class="inspire" src="https://s6.postimg.org/cd1dr5gtt/Inspire_logo.png" alt="">
         </div>
-
         <div class="menuContainer">
           <div class="navContainer">
-            <div class="navButton" ng-click="showProducts = !showProducts">
+            <div class="navButton" ng-click="showProducts = !showProducts; showInspiration = false">
               PRODUCTS
             </div>
           </div>
           <div class="navContainer">
-            <div class="navButton" ng-click="showInspiration = !showInspiration">
+            <div class="navButton" ng-click="showInspiration = !showInspiration; showProducts = false">
               INSPIRATION
             </div>
           </div>
@@ -59,10 +59,10 @@
            </div>
 
            <div ui-sref="about({id:1})" class="xCameraOne">
-             <p>X1D-50C add ui sref</p>
+             <p>X1D-50C</p>
            </div>
            <div ui-sref="about({id:2})" class="xCameraTwo">
-             <p>X1D-50C4116 EDITION add ui sref</p>
+             <p>X1D-50C4116 EDITION</p>
            </div>
          </div>
 
@@ -72,13 +72,13 @@
              <p>H6 SYSTEM</p>
            </div>
            <div ui-sref="about({id:3})" class="hCameraOne">
-             <p>H6D-100C add ui sref</p>
+             <p>H6D-100C</p>
            </div>
            <div ui-sref="about({id:4})" class="hCameraTwo">
-             <p>H6D-50C add ui sref</p>
+             <p>H6D-50C</p>
            </div>
            <div ui-sref="about({id:5})" class="hCameraThree">
-             H6X add ui sref
+             <p>H6X</p>
            </div>
           </div>
 
@@ -94,7 +94,6 @@
    INSPIRATION HERE
   </div>
   <!-- End drop down menu  -->
-
 
 
 
