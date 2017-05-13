@@ -43,7 +43,7 @@
 
   <!-- Start drop down menu  -->
 
-<div ng-show="showProducts" class="dropDownMenuContainer">
+<div ng-class="{'dropDownTransition':showProducts}"class="dropDownMenuContainer">
    <div class="dropDownMenu">
      <div class="dropDownMenuDiv">
        <img class="dropDownImage" src="https://s6.postimg.org/cxl07kzg1/x_systems_nav_5.jpg">
@@ -89,7 +89,7 @@
    </div>
    </div>
 </div>
-<div ng-show="showInspiration" class="dropDownMenuContainer">
+<div ng-class="{'dropDownTransition': showInspiration}" class="dropDownMenuContainer">
  INSPIRATION HERE
 </div>
 <!-- End drop down menu  -->

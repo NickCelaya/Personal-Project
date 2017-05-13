@@ -9,10 +9,10 @@
 <!--Start of system name and products section-->
 <div class="systemsContainer">
   <div class="productSystem">
-    <!-- {{product.system}} -->
+    <p>{{product[0].system}}</p>
   </div>
   <div class="productName">
- <!-- {{product.name}} -->
+    <p>{{product[0].name}}</p>
   </div>
 </div>
 <!--End of system name and products section-->
@@ -29,30 +29,29 @@
     <!-- repeated row images -->
     <div class="productsLowImageRow">
      <div ng-repeat="item in images">
-       <div>
          <img class="rowOfImages" ng-src="{{item.img}}">
-       </div>
      </div>
    </div>
 
   </div>
   <div class="systemInfoContainer">
+
     <div class="systemInfo">
+<p>{{product[0].description}}</p>
+  </div>
 
-<!-- finished the div above... start here friday morning and keep styling divs and data -->
-
-      <!-- <p>{{product.description}}</p> -->
-
-    </div>
   </div>
 </div>
 
 <div class="productDescriptionContainer" >
-<div class="details">
-  stuff here
-<!-- <p>{{info[0].description}}</p> -->
 
+<div class="details">
+  <p>{{info[0].header}}</p>
+  <p>{{info[0].description}}</p>
+  <p>{{info[1].header}}</p>
+  <p>{{info[1].description}}</p>
 </div>
+
 
 </div>
 

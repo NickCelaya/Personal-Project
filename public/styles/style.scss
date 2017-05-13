@@ -113,22 +113,27 @@
 //Dropdown menu
 .dropDownMenuContainer{
   background-color: limegreen;
-    border-top: whitesmoke;
-    border-top-style: solid;
-    border-top-width: 1px;
     display: flex;
     justify-content: center;
-    height: 300px;
+    height: 0px;
     margin-left: 65px;
     margin-right: 65px;
+    transition: 1s height ease;
+    overflow: hidden;
 }
+
+.dropDownTransition{
+  height: 300px;
+  border-top: 1px whitesmoke solid;
+}
+
 
 .dropDownMenu{
   background-color: aqua;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: inherit;
+  height: 300px;
   width: 50%;
 }
 
@@ -503,7 +508,7 @@ overflow: hidden;
 //Start About Page/////////////////////////////////
 
 .systemsContainer{
-  background-color: aqua;
+  // background-color: aqua;
   height: 66.5px;
   // width: 100vw
   margin-left: 15%;
@@ -511,19 +516,28 @@ overflow: hidden;
 }
 
 .productSystem{
-  background-color: yellow;
+  // background-color: yellow;
   height: 16px;
   font-size: 15px;
+  padding-left: 20px;
+  line-height: 17px;
+  font-family: 'Libre Franklin', sans-serif;
+  color: #808080;
+
 }
 
 .productName{
-  background-color: purple;
+  // background-color: purple;
   height: inherit;
   font-size: 36px;
+  padding-left: 20px;
+  line-height: 40px;
+  font-family: 'Libre Franklin', sans-serif;
+  color: #ffffff;
 }
 
 .pictureInfoContainer{
-  background-color: salmon;
+  // background-color: salmon;
   display: flex;
   justify-content: center;
   height: auto;
@@ -533,7 +547,7 @@ overflow: hidden;
 }
 
 .productImageContainer{
-  background-color: teal;
+  // background-color: teal;
     // display: flex;
     // flex-direction: column;
     // align-items: center;
@@ -542,20 +556,20 @@ overflow: hidden;
 }
 
 .productImageDiv{
-  background-color: red;
+  // background-color: red;
   height: 385px;
   width: 88%;
 }
 
 .bigImage{
-  background-color: red;
+  // background-color: red;
     height: auto;
     width: 95%;
     object-fit: cover;
 }
 
 .productsLowImageRow{
-  background-color: yellow;
+  // background-color: yellow;
   display: flex;
   flex-direction: row;
     height: 65px;
@@ -569,27 +583,30 @@ overflow: hidden;
 }
 
 .systemInfoContainer{
-  background-color: lime;
+  // background-color: lime;
   height: inherit;
   width: 50%
 }
 
 .systemInfo{
-  background-color: aqua;
+  // background-color: red;
   height: 167px;
   width: 92%;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 18px;
+  color: #999999;
 }
 
 /// lower product info table
 
 .productDescriptionContainer{
-  background-color: hotpink;
+  // background-color: hotpink;
   height: 947px;
   width: 100vw;
 }
 
 .details{
-  background-color: aqua;
+  // background-color: aqua;
   height: 947px;
   width: auto;
   margin-left: 15%;

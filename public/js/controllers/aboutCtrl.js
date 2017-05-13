@@ -7,7 +7,7 @@ angular.module("firstApp").controller("aboutCtrl", function($scope, mainService)
       promise.then(function(response){
         $scope.images = response.images
         $scope.info = response.info
-        $scope.product = response.product[0]
+        $scope.product = response.product
       })
   }
 
