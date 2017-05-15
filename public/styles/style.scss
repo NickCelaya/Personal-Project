@@ -581,20 +581,22 @@ overflow: hidden;
   height: 167px;
   width: 92%;
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: normal;
   color: #999999;
 }
 
 /// lower product info table
 
 .productDescriptionContainer{
-  background-color: hotpink;
+  // background-color: hotpink;
   height: auto;
   width: 100vw;
 }
 
 .detailsContainer{
-  background-color: aqua;
+  // background-color: aqua;
+  background-color: white;
   display: flex;
   justify-content: space-around;
   height: auto;
@@ -606,19 +608,19 @@ overflow: hidden;
 
 
 .detailsDiv{
-  background-color: red;
+  // background-color: red;
   height: inherit;
   width: 618.33px;
 }
 
 .details{
-  background-color: yellow;
+  // background-color: yellow;
   height: 225px;
   width: 598.33px;
 }
 
 .headerdiv{
-  background-color: lightblue;
+  // background-color: lightblue;
   display: flex;
   align-items: center;
   height: 55px;
@@ -628,7 +630,7 @@ overflow: hidden;
 }
 
 .header{
-  background-color: yellow;
+  // background-color: yellow;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 33px;
   font-weight: 500;
@@ -653,7 +655,7 @@ overflow: hidden;
 }
 
 .extraFeaturesDiv{
-  background-color: green;
+  // background-color: green;
   height: inherit;
   width: 618.33px;
   margin-left: 10px;
@@ -662,19 +664,22 @@ overflow: hidden;
 }
 
 .sideImageContainer{
+  // background-color: red;
   height: 200px;
-    display: flex;
-    justify-content: space-between;
-    width: auto;
-    margin-left: 2px;
-    background-color: red;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  margin-left: 10px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
 }
 
 .pictureRow{
   height: 200px;
   width: 50%;
   margin-left: 2px;
-  background-color: blue;
+  // background-color: blue;
 }
 
 .sideImages{
@@ -691,6 +696,6 @@ overflow: hidden;
 }
 
 .grayscale:hover{
-  filter: grayscale(0);
+  filter: brightness(100%);
   -webkit-filter: grayscale(0);
 }
