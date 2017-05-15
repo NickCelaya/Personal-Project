@@ -83,7 +83,7 @@
 --
 
 
---
+
 -- CREATE TABLE IF NOT EXISTS products_info(
 -- id SERIAL PRIMARY KEY,
 -- products_id INTEGER REFERENCES products(id),
@@ -91,8 +91,8 @@
 -- description VARCHAR
 --
 -- );
---
---
+
+
 -- INSERT INTO products_info(products_id, header, description)
 -- VALUES
 -- (1, 'Compact Design', 'By opting for a mirrorless design, we were able to take our 50MP CMOS sensor and pack it into a footprint smaller than most full frame 35mm cameras. For the very first time, photographers have a camera that is no larger than a small format rangefinder, but offers the quality that only Hasselblad medium format can give. The deep and comfortable handgrip beautifully complements the slender body, creating a camera like no other.'),
