@@ -594,12 +594,14 @@ overflow: hidden;
 }
 
 .detailsContainer{
-background-color: aqua;
-height: auto;
-width: auto;
-margin-right: 5%;
-margin-left: 5%;
-padding: 40px 40px 40px;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  width: auto;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 40px 40px 40px;
 }
 
 
@@ -607,11 +609,6 @@ padding: 40px 40px 40px;
   background-color: red;
   height: inherit;
   width: 618.33px;
-  border-right: black solid 5px;
-  // font-family: 'Libre Franklin', sans-serif;
-  // font-size: 18px;
-  // color: black;
-  // margin-bottom: 1px;
 }
 
 .details{
@@ -631,23 +628,69 @@ padding: 40px 40px 40px;
 }
 
 .header{
+  background-color: yellow;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 33px;
   font-weight: 500;
   line-height: 36px;
+  margin-top: 26px;
+  margin-bottom: 19px;
 }
 
-.descriptionDiv{
-  background-color: teal;
-    height: 170px;
-    width: auto;
-  // font-family: 'Libre Franklin', sans-serif;
-  // font-size: 18px;
-}
+// .descriptionDiv{
+//   background-color: teal;
+//     height: 170px;
+//     width: auto;
+//   font-family: 'Libre Franklin', sans-serif;
+//   font-size: 18px;
+// }
 
 .description{
   font-family: 'Libre Franklin', sans-serif;
   font-size: 16px;
   font-weight: normal;
-  line-height: 24px;
+  // line-height: 24px;
+}
+
+.extraFeaturesDiv{
+  background-color: green;
+  height: inherit;
+  width: 618.33px;
+  margin-left: 10px;
+  border-left: solid .5px grey;
+
+}
+
+.sideImageContainer{
+  height: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin-left: 2px;
+    background-color: red;
+}
+
+.pictureRow{
+  height: 200px;
+  width: 50%;
+  margin-left: 2px;
+  background-color: blue;
+}
+
+.sideImages{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.grayscale{
+  filter:grayscale(100%);
+  -webkit-filter:grayscale(100%);
+  transition: filter .3s ease;
+  -webkit-transition: filter .8s ease;
+}
+
+.grayscale:hover{
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
