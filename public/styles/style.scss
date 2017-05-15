@@ -589,23 +589,23 @@ overflow: hidden;
 
 .productDescriptionContainer{
   background-color: hotpink;
-  height: 947px;
+  height: auto;
   width: 100vw;
 }
 
 .detailsContainer{
-  background-color: aqua;
-  height: 947px;
-  width: auto;
-  margin-left: 15%;
-  margin-right: 15%;
-  padding: 40px 40px 40px;
+background-color: aqua;
+height: auto;
+width: auto;
+margin-right: 5%;
+margin-left: 5%;
+padding: 40px 40px 40px;
 }
 
 
-.test{
+.detailsDiv{
   background-color: red;
-  height: 867.50px;
+  height: inherit;
   width: 618.33px;
   border-right: black solid 5px;
   // font-family: 'Libre Franklin', sans-serif;
@@ -614,9 +614,23 @@ overflow: hidden;
   // margin-bottom: 1px;
 }
 
-.test2{
-  background-color: red;
-  height: 867.50px;
-  width: 618.33px;
-  border-left: black solid 5px;
+.details{
+  background-color: yellow;
+  height: 173px;
+  width: 598.33px;
+}
+
+.headerdiv{
+  background-color: lightblue;
+  height: 36px;
+  width: auto;
+  // font-family: 'Libre Franklin', sans-serif;
+  // font-size: 18px;
+}
+
+.header{
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 33px;
+  font-weight: 500px;
+  line-height: 36px;
 }

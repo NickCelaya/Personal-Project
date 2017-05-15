@@ -51,12 +51,12 @@ module.exports = {
 
 
   images: function(req, res){
-
     db.imagesUrl(function(err, images){
       console.log(images);
       res.status(200).send(images)
     })
   }
+
 
 
 
