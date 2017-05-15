@@ -616,13 +616,15 @@ padding: 40px 40px 40px;
 
 .details{
   background-color: yellow;
-  height: 173px;
+  height: 225px;
   width: 598.33px;
 }
 
 .headerdiv{
   background-color: lightblue;
-  height: 36px;
+  display: flex;
+  align-items: center;
+  height: 55px;
   width: auto;
   // font-family: 'Libre Franklin', sans-serif;
   // font-size: 18px;
@@ -631,6 +633,21 @@ padding: 40px 40px 40px;
 .header{
   font-family: 'Libre Franklin', sans-serif;
   font-size: 33px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 36px;
+}
+
+.descriptionDiv{
+  background-color: teal;
+    height: 170px;
+    width: auto;
+  // font-family: 'Libre Franklin', sans-serif;
+  // font-size: 18px;
+}
+
+.description{
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
 }
