@@ -485,18 +485,29 @@ overflow: hidden;
 
 //Start Lower footer
 .lowerFooter{
-  background-color: limegreen;
+  // background-color: limegreen;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  // border-top: #5B5B5B;
-  // border-top-style: solid;
-  // border-top-width: thin;
   height: 149px;
   width: inherit;
 }
 
-.hasselblad{}
+.lowestImage{
+  object-fit: cover;
+  height: 100%;
+  width: auto;
+}
+
+.hasselbladFooter{
+  text-align: center;
+  height: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 10px;
+  color: white;
+}
 
 
 //End Lower Footer
