@@ -97,14 +97,32 @@
 
 // login
 .loginDiv{
+  // background-color: red;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-color: red;
+  justify-content: space-around;
   margin-top: 55.75px;
   height: 111.5px;
   width: 10vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: white;
+}
+
+.loginText{
+  // background-color: blue;
+  height: 30px;
+  width: auto;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+
+.iconMargin{
+  font-family: 'Libre Franklin', sans-serif;
+  margin-left: 8px;
 }
 // login
 
@@ -325,14 +343,15 @@
 
 //Start Upper Footer
 .footerContainer{
-  background-color: orange;
+  // background-color: orange;
+  background-color: black;
   height: 622px;
   width: 100vw;
 
 }
 
 .innerFooterContainer{
-  background-color: red;
+  // background-color: red;
   // height: 622px;
   height: inherit;
   margin-left: 65px;
@@ -476,6 +495,8 @@ overflow: hidden;
   height: 149px;
   width: inherit;
 }
+
+.hasselblad{}
 
 
 //End Lower Footer
