@@ -24,12 +24,12 @@
 -- ('H6 System', 'H6X', 'Versatility comes to the fore again from Hasselblad by offering a camera body that is fully compatible with all H System lenses, including the HCD 24mm, HCD 28mm and the HCD 35-90mm lenses. It can also use the film magazine and offers H5X functionality with 3rd party digital backs.
 --
 -- Although aimed primarily at current H1, H2, H2F, H4X and H5X users, the H6X can naturally act as a backup for H5D users too.');
-
-
-
-
-
-
+--
+--
+--
+--
+--
+--
 -- CREATE TABLE IF NOT EXISTS images(
 -- id SERIAL PRIMARY KEY,
 -- products_id INTEGER REFERENCES products(id),
@@ -81,9 +81,9 @@
 --
 -- Although aimed primarily at current H1, H2, H2F, H4X and H5X users, the H6X can naturally act as a backup for H5D users too.');
 --
-
-
-
+--
+--
+--
 -- CREATE TABLE IF NOT EXISTS products_info(
 -- id SERIAL PRIMARY KEY,
 -- products_id INTEGER REFERENCES products(id),
@@ -91,8 +91,8 @@
 -- description VARCHAR
 --
 -- );
-
-
+--
+--
 -- INSERT INTO products_info(products_id, header, description)
 -- VALUES
 -- (1, 'Compact Design', 'By opting for a mirrorless design, we were able to take our 50MP CMOS sensor and pack it into a footprint smaller than most full frame 35mm cameras. For the very first time, photographers have a camera that is no larger than a small format rangefinder, but offers the quality that only Hasselblad medium format can give. The deep and comfortable handgrip beautifully complements the slender body, creating a camera like no other.'),
